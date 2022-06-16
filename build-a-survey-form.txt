@@ -1,0 +1,232 @@
+** start of undefined **
+
+<!DOCTYPE hmtl>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>survey-form</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<body>
+    <!-- <img src="./Images/gettyimages-498323251-2048x2048.jpg" /> -->
+    <!-- <div class="majorwrapper"> -->
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <div class="wrapper">
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input id="name" type="text" name="full-name" value="Enter your name" placeholder = "e.g. John Doe" required /></label>
+      <label id="email-label">Email <input id="email" type="email" name="email" value="Enter your Email" placeholder="e.g. cynthia@hotmail.com" required /></label>
+      <label id="number-label">Age (optional) <input id="number" type="number" name="age" min="13" max="102" placeholder="Age" />
+      <label>Which option best describes your current role
+        <select name="options" id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+        <label> Would you recommend freeCodeCamp to a friend?</label>
+      <label><input type="radio" name="recommend" class="inline" value="Definitely" checked />Definitely</label>
+    <label><input type="radio" name="recommend" class="inline" value="Maybe" />Maybe</label>
+    <label><input type="radio" name="recommend" class="inline" value="Not sure" />Not sure</label>
+    </fieldset>
+    <fieldset>
+      <label>What is your favorite feature of freeCodeCamp
+        <select name="features">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>What would you like to see improved (Check all that apply)</label>
+      <label for="front-end"><input type="checkbox" name="Improved" class="inline" value="front-end" />Front-end Projects</label>
+      <label for="back-end"><input type="checkbox" name="Improved" class="inline" value="back-end" />Back-end Projects</label>
+      <label for="data-visualization"><input type="checkbox" name="Improved" class="inline" value="data-visualization" />Data Visualization</label>
+      <label for="challenges"><input type="checkbox" name="Improved" class="inline" value="challenges" />Challenges</label>
+      <label for="open-source-community"><input type="checkbox" name="Improved" class="inline" value="open-source-community" />Open Source Community</label>
+      <label for="gitter-help-rooms"><input type="checkbox" name="Improved" class="inline" value="gitter-help-rooms" />Gitter help rooms</label>
+      <label for="videos"><input type="checkbox" name="Improved" class="inline" value="videos" />Videos</label>
+      <label for="city-meetups"><input type="checkbox" name="Improved" class="inline" value="city-meetups" />City Meetups</label>
+      <label for="wiki"><input type="checkbox" name="Improved" class="inline" value="wiki" />Wiki</label>
+      <label for="forum"><input type="checkbox" name="Improved" class="inline" value="forum" />Forum</label>
+      <label for="additional-courses"><input type="checkbox" name="Improved" class="inline" value="additional courses" />Additional Courses</label>
+    </fieldset>
+    <fieldset>
+      <label>Any comments or suggestions?
+        <textarea name="comments" rows="6" cols="60" placeholder="Enter your comment here..."></textarea>
+      <label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+  </form>
+</div>
+<!-- </div> -->
+<body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+/* body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: tahoma;
+    font-size: 16px;
+    /* background-image: src="./Images/gettyimages-498323251-2048x2048.jpg" */
+    /*background-image: url("./Images/gettyimages-498323251-2048x2048.jpg");
+    /* background-image: ; */
+    /* font-style: italic; */
+    /* font-family: 'Times New Roman', Times, serif;
+  } */
+
+  body {
+    width: 100%;
+    height: 275vh;
+    margin: 0;
+    font-family: tahoma;
+    font-size: 16px;
+    background-image: url("./Images/gettyimages-498323251-2048x2048.jpg");
+    color: white;
+    background-color: rgb(50, 50, 75, .5);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  #title {
+    font-size: 175%;
+    /* font-family: ; */
+  }
+
+  
+  #description {
+    font-style: italic;
+    font-size: large;
+  }
+  
+  #survey-form {
+    width: 85%;
+    /* max-width: 500px; */
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color: rgb(155,38,182,0);
+    color: white;
+    font-size: large;
+  }
+
+  /* #number, input:invalid {
+        border: none;
+      }
+      
+      /* input:invalid:required {
+        background-image: linear-gradient(to right, pink, lightgreen);
+      } */
+      
+      /*input:valid {
+        border: none;
+  } */
+  
+  fieldset{
+    border: none;
+    padding: 0.2rem 0;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 3.0em;
+    border-radius: 5px;
+    box-shadow: none;
+    border-style: none;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 0.9rem;
+    color: white;
+    background-color: lightgreen;
+    min-width: 300px;
+    border: none;
+  }
+
+  input[type="text"] {
+    padding-left: 10px;
+    color: rgb(100, 100, 100);
+  }
+
+  input[type="email"] {
+    padding-left: 10px;
+    color: rgb(100, 100, 100);
+  }
+
+  input[type="number"]{
+    padding-left: 10px;
+    font-size: 0.9rem;
+    color: rgb(100, 100, 100);
+  }
+
+  select {
+    padding-left: 10px;
+    color: rgb(100, 100, 100);
+  }
+
+  /* input[type="checkbox"] {
+
+  } */
+  
+  textarea {
+    font-family: "Times New Roman";
+    font-size: medium;
+  }
+    .wrapper {
+    background-color: rgb(75,0,130,0.5);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    /* padding: 50%; */
+    }
+
+    /* .wrapper, form{
+        color: white;
+    } */
+
+    /* .majorwrapper {
+        width: 100%;
+        background-image:linear-gradient(blue, transparent)
+    } */
+
+
+
+** end of undefined **
+

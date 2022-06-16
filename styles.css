@@ -1,0 +1,150 @@
+/* body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: tahoma;
+    font-size: 16px;
+    /* background-image: src="./Images/gettyimages-498323251-2048x2048.jpg" */
+    /*background-image: url("./Images/gettyimages-498323251-2048x2048.jpg");
+    /* background-image: ; */
+    /* font-style: italic; */
+    /* font-family: 'Times New Roman', Times, serif;
+  } */
+
+  body {
+    width: 100%;
+    height: 275vh;
+    margin: 0;
+    font-family: tahoma;
+    font-size: 16px;
+    background-image: url("./Images/gettyimages-498323251-2048x2048.jpg");
+    color: white;
+    background-color: rgb(50, 50, 75, .5);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  #title {
+    font-size: 175%;
+    /* font-family: ; */
+  }
+
+  
+  #description {
+    font-style: italic;
+    font-size: large;
+  }
+  
+  #survey-form {
+    width: 85%;
+    /* max-width: 500px; */
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    background-color: rgb(155,38,182,0);
+    color: white;
+    font-size: large;
+  }
+
+  /* #number, input:invalid {
+        border: none;
+      }
+      
+      /* input:invalid:required {
+        background-image: linear-gradient(to right, pink, lightgreen);
+      } */
+      
+      /*input:valid {
+        border: none;
+  } */
+  
+  fieldset{
+    border: none;
+    padding: 0.2rem 0;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 3.0em;
+    border-radius: 5px;
+    box-shadow: none;
+    border-style: none;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 0.9rem;
+    color: white;
+    background-color: lightgreen;
+    min-width: 300px;
+    border: none;
+  }
+
+  input[type="text"] {
+    padding-left: 10px;
+    color: rgb(100, 100, 100);
+  }
+
+  input[type="email"] {
+    padding-left: 10px;
+    color: rgb(100, 100, 100);
+  }
+
+  input[type="number"]{
+    padding-left: 10px;
+    font-size: 0.9rem;
+    color: rgb(100, 100, 100);
+  }
+
+  select {
+    padding-left: 10px;
+    color: rgb(100, 100, 100);
+  }
+
+  /* input[type="checkbox"] {
+
+  } */
+  
+  textarea {
+    font-family: "Times New Roman";
+    font-size: medium;
+  }
+    .wrapper {
+    background-color: rgb(75,0,130,0.5);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    /* padding: 50%; */
+    }
+
+    /* .wrapper, form{
+        color: white;
+    } */
+
+    /* .majorwrapper {
+        width: 100%;
+        background-image:linear-gradient(blue, transparent)
+    } */
+
